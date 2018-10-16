@@ -172,8 +172,8 @@ app.controller('ScreenshotReportController', function ($scope) {
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
-        "sessionId": "91d6a5ecd325afb8a7110588abede17a",
-        "instanceId": 9472,
+        "sessionId": "47d2ddecda89c564cd0574bae55f44f9",
+        "instanceId": 9944,
         "browser": {
             "name": "chrome",
             "version": "69.0.3497.100"
@@ -181,9 +181,9 @@ app.controller('ScreenshotReportController', function ($scope) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "0088001a-002d-001b-0075-00a2003f00c8.png",
-        "timestamp": 1539662416227,
-        "duration": 2096
+        "screenShotFile": "00bc003a-0097-0053-00d5-0084000b0033.png",
+        "timestamp": 1539663211212,
+        "duration": 1815
     }
 ];
 

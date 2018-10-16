@@ -1,4 +1,5 @@
 // An example configuration file
+let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 var HtmlReporter = require('protractor-beautiful-reporter');
 exports.config = {
   // The address of a running selenium server.
@@ -10,8 +11,14 @@ exports.config = {
   },
   onPrepare: function () {
     jasmine.getEnv().addReporter(new HtmlReporter({
-      baseDirectory: 'tmp/screenshots'
+      baseDirectory: 'reports/screenshots'
    }).getJasmine2Reporter());
+   jasmine.getEnv().addReporter(new SpecReporter({
+    displayFailuresSummary: true,
+    displayFailuredSpec: true,
+    displaySuiteNumber: true,
+    displaySpecDuration: true
+  }));
     return browser.executeScript("alert('Test');").then(function () {
       return browser.switchTo().alert().accept();
     });

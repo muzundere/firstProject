@@ -16,7 +16,6 @@ describe('angularjs homepage', function() {
       // Protractor patches 'expect' to understand promises.
   
       expect(greeting.getText()).toEqual('Hello Julie!');
-      
     });
   });
   
